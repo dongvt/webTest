@@ -1,0 +1,25 @@
+############ Registraton #############
+Performance: duet
+First Name: Govert Fab
+Last Name: Carreno
+Student ID: 12345
+First Name 2: Secpnd Name
+Last Name 2: Last Name Second
+Student ID 2: 85239
+Skill: intermediate
+Instrument: voice
+Location: austin
+Room: 103
+Time Slot: 10:43
+############ End Registration ########
+############ Registraton #############
+Performance: solo
+First Name: Govert Fab
+Last Name: Carreno
+Student ID: 12345
+Skill: pre-advanced
+Instrument: other
+Location: austin
+Room: 103
+Time Slot: 5:23
+############ End Registration ########

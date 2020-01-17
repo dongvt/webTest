@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="js.js"></script>
+        
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <header>
+            <div id="content">
+                <form action="assign11.php" method="post" name="mainForm" id="mainForm">
+                    <table>
+                        <tr>
+                            <td>Start City:</td> <td><input type="text" name="startCity" id="startCity" class="inputFields"></td> 
+                        </tr>
+                        <tr>
+                            <td>Start State:</td> <td><input type="text" name="startState" id="startState" class="inputFields" onkeypress="stateValidation(this.form.startState.value)"></td>
+                        </tr>
+                        <tr>
+                            <td>End City:</td> <td><input type="text" name="endCity" id="endCity" class="inputFields"></td>
+                        </tr>
+                        <tr>
+                            <td>End State:</td> <td><input type="text" name="endState" id="endState" class="inputFields" onkeypress="stateValidation(this.form.endState.value)"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" name="Compute" value="Compute" id="Compute" class="buttons"></td>
+                        </tr>
+                        
+                    </table>
+                </form>
+                <span id="JSONInfo" ></span>
+            </div>
+                
+        </header>
+        <footer>
+            
+            <div class="footerLink">
+                <a href="../index.html">CS 213 Assignments</a>
+            </div>
+        </footer>
+    </body>
+</html>

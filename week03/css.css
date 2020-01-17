@@ -1,0 +1,114 @@
+.inputFields /*Idea taken from: https://codepen.io/jbui/pen/xEqWpL/ */
+{
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(50, 50, 50, .2);
+    color: rgb(50, 50, 50);
+    outline: none;
+} 
+
+.buttons {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+  
+}
+.buttons:hover {
+    background: rgba(10, 180, 180, 1);
+}
+
+/*Style idea taken from w3.org for check box/radio*/
+.formContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.formContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmarkBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkmarkRadio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.formContainer:hover input ~ .checkmarkBox,
+.formContainer:hover input ~ .checkmarkRadio{
+  background-color: #ccc;
+}
+
+.formContainer input:checked ~ .checkmarkBox,
+.formContainer input:checked ~ .checkmarkRadio {
+  background-color: rgba(10, 180, 180, 1);
+}
+
+.checkmarkBox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.formContainer input:checked ~ .checkmarkBox:after {
+  display: block;
+}
+
+.formContainer .checkmarkBox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+} 
+
+.container .checkmarkRadio:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+/*end style for check box*/
+
+form .label
+{
+    font-family: fantasy;
+    font-size: 2em;
+    color:  rgb(10, 180, 180);
+}

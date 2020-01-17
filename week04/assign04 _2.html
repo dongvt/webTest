@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+
+        <style>
+            form {
+                margin-left: 10%;
+                font-size: 25px;
+            }
+            .menu {
+                position: absolute;
+                border: solid;
+                max-width: 80%;
+                min-width: 80%;
+
+                top: 89%;
+                left: 10%;
+                box-shadow: 8px 8px 15px rgba(150, 150, 150, 0.8);
+            }
+            .inputFields{
+                margin: 15px 0;
+                font-size: 10px;
+                padding: 10px;
+                width: 620px;
+                border: 1px solid rgba(10, 180, 180, 1);
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                background: rgba(50, 50, 50, .2);
+                color: rgb(50, 50, 50);
+                outline: none;
+            }
+            .buttons {
+                border: 1px solid rgba(10, 180, 180, 1);
+                background: rgba(20, 20, 20, .6);
+                font-size: 18px;
+                color: white;
+                padding: 10px 50px;
+                cursor: pointer;
+                transition: .4s;
+            }
+            .buttons:hover {
+                background: rgb(20, 20, 20);
+            }
+            
+        </style>
+        
+        <link rel="stylesheet" type="text/css" href="css.css">
+        
+        <title>Week 04_2</title>
+    </head>
+    <body>
+        <header>
+            <div id="content">
+                <h1>Contact Me</h1>
+                <form action="#" method="post">
+                    Fill the data, and I'll contact you in short time <br/><br/>
+                    Name: <br/>
+                    <input type="text" name="Name" class="inputFields"> <br/><br/>
+                    Email <br/>
+                    <input type="email" name="Name" class="inputFields"> <br/><br/>
+                    Mobile Number <br/>
+                    <input type="tel" name="Name" class="inputFields"> <br/><br/>
+                    Message <br/>
+                    <textarea name="TextArea" rows="6" class="inputFields">Write Here....</textarea> <br/>
+                    <center>
+                        <input type="submit" value="Submit" class="buttons"/>
+                    </center>
+                </form>
+                <div class="menu">
+                    <ul>
+                        <li><a href="assign04.html">Home</a></li>
+                        <li><a href="#">My Creations</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Conact Me</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+        <footer>
+            <div class="solcialMedia">
+                <img src="../image/Linkedin.png" alt="LinkedIn" with="30" height="30"/>
+                <img src="../image/Twitter.png" alt="Twitter" with="30" height="30"/>
+                <img src="../image/facebook.png" alt="Facebook" with="30" height="30"/>
+            </div>
+            <div class="footerLink">
+                <a href="index.html">CS 213 Assignments</a>
+            </div>
+        </footer>
+    </body>
+</html>

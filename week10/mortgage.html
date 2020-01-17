@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+
+        <script src="js.js"> </script>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        
+        <title>Mortgage Calculator</title>
+    </head>
+    <body>
+        <header>
+            <div id="content">
+                <form action="mortgage.php" method="get" id="myForm" onsubmit=" return formValidation();">
+                    Mortgage Calculator<br/><br/>
+                    APR (Annual Percentage Rate): <br/>
+                    <input type="text" name="apr" id="apr" class="inputFields" value="<?php echo $_GET['apr']?>" onkeypress="ValidateNumberOnly(true)"> <br/>
+                    Loan Term: <br/>
+                    <input type="text" name="term" id="term" class="inputFields" value="<?php echo $_GET['term']?>" onkeypress="ValidateNumberOnly(false)"> <br/>
+                    Loan Amount <br/>
+                    <input type="text" name="amount" id="amount" class="inputFields" value="<?php echo $_GET['amount']?>" onkeypress="ValidateNumberOnly(false)"> <br/>
+                    Monthly Payment <br/>
+                    <input type="text" id="payment" class="inputFields calc" value="<?php echo number_format($payment,2)?>"  readonly> <br/><br/>
+                    <div id="validationMessage"></div>
+                    
+                    <input type="submit" id="calculate" value="Calculate" class="buttons "/>
+                    <input type="reset" id="clear" value="Clear" class="buttons"/>
+                </form>
+            </div>
+                
+        </header>
+        <footer>
+            
+            <div class="footerLink">
+                <a href="../index.html">CS 213 Assignments</a>
+            </div>
+        </footer>
+    </body>
+</html>

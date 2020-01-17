@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js.js"></script>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <title>Govert Carre&ntilde;o's Home Page</title>
+    </head>
+    <body>
+        <div id="container">
+            <form name="countries">
+                <input type="button" name="mexico" value="Mexico" onclick="loadDoc('Mexico')">
+                <input type="button" name="canada" value="Canada" onclick="loadDoc('Canada')">
+                <input type="button" name="russia" value="Russia" onclick="loadDoc('Russia')">
+                <input type="button" name="usa" value="USA" onclick="loadDoc('USA')">
+            </form>
+            <div id="countryInfo"></div>
+            <hr>
+            <form name="json">
+                <input type="text" id="fileName" name="fileName" >
+                <input type="button" value="show JSON" onclick="loadJSON()">
+            </form>
+            <div id="JSONInfo"></div>
+        </div>
+    </body>
+</html>

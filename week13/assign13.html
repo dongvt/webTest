@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="js.js"></script>
+        
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <header>
+            <div id="content">
+                <form action="assign13.php" method="post" name="mainForm" id="mainForm" onsubmit="return submitForm()">
+                    <table>
+                        <tr>
+                            <td>Performance</td>
+                            <td>
+                                <select id="performance" name="performance">
+                                  <option value="solo">Solo</option>
+                                  <option value="duet">Duet</option>
+                                  <option value="concerto">Concerto</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type="text" name="first_name" id="first_name"></td>
+                        </tr>
+                        <tr>
+                            <td>Second Name</td>
+                            <td><input type="text" name="last_name" id="last_name"></td>
+                        </tr>
+                        <tr>
+                            <td>Student ID</td>
+                            <td><input type="text" name="student_id" id="student_id"></td>
+                        </tr>
+                    </table>
+                    <table id="second">
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type="text" name="first_name_2" id="first_name_2"></td>
+                        </tr>
+                        <tr>
+                            <td>Second Name</td>
+                            <td><input type="text" name="last_name_2" id="last_name_2"></td>
+                        </tr>
+                        <tr>
+                            <td>Student ID</td>
+                            <td><input type="text" name="student_id_2" id="student_id_2"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>Skill Level</td>
+                            <td>
+                                <select id="skill" name="skill">
+                                    <option value="begginer">Begginer</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="pre-advanced">Pre-Advanced</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Instrument</td>
+                            <td>
+                                <select id="instrument" name="instrument">
+                                    <option value="piano">Piano</option>
+                                    <option value="voice">Voice</option>
+                                    <option value="string">String</option>
+                                    <option value="organ">Organ</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td>
+                                <select id="location" name="location">
+                                    <option value="snow">Snow</option>
+                                    <option value="austin">Austin</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Room Number</td>
+                            <td><input type="text" name="room" id="room"> </td>
+                        </tr>
+                        <tr>
+                            <td>Time Slot</td>
+                            <td><input type="text" name="time_slot" id="time_slot"> </td>
+                        </tr>
+                        
+                    </table>
+                    <input type="reset" value="Clear">
+                    <input type="submit" value="Registrer">
+                </form>
+                <div id="errorMessage"></div>
+                <h2>Registered Students</h2>
+                <textarea rows="5" cols="100"><?php echo $registeredStudents;?></textarea>
+            </div>
+                
+        </header>
+        <footer>
+            
+            <div class="footerLink">
+                <a href="../index.html">CS 213 Assignments</a>
+            </div>
+        </footer>
+    </body>
+</html>

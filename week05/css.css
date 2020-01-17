@@ -1,0 +1,104 @@
+html,
+body
+{
+    background-color: azure;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Arial Narrow";
+}
+
+header {
+    height: 85%;
+    padding: 0px;
+}
+
+footer {
+    position: relative;
+    height: 15%;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 12px 0 15px -4px rgba(150, 150, 150, 0.8), -12px 0 8px -4px rgba(150, 150, 150, 0.8);
+    text-align: center;
+}
+
+
+h2 {
+    background-color: rgb(191,191,191);
+    text-align: center;
+    color: rgb(255,255,255);
+    padding: 1.1em;
+    margin: 0;
+}
+
+
+#content{
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+    height: 100%;
+    box-shadow: 12px 0 15px -4px rgba(150, 150, 150, 0.8), -12px 0 8px -4px rgba(150, 150, 150, 0.8);
+    background-color: rgb(255,255,255);
+}
+
+.footerLink {
+    position: relative;
+    top: 4em;
+}
+
+form {
+    margin-left: 10%;
+    font-size: 25px;
+}
+.menu {
+    position: absolute;
+    border: solid;
+    max-width: 80%;
+    min-width: 80%;
+
+    top: 89%;
+    left: 10%;
+    box-shadow: 8px 8px 15px rgba(150, 150, 150, 0.8);
+}
+.inputFields{
+    margin: 15px 0;
+    font-size: 15px;
+    padding: 10px;
+    width: 620px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(50, 50, 50, .2);
+    color: rgb(50, 80, 80);
+    outline: none;
+}
+.calc {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(10, 180, 180, 1);
+    text-decoration-style: solid;
+}
+
+.buttons {
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, .6);
+    font-size: 18px;
+    color: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+.buttons:hover {
+    background: rgb(20, 20, 20);
+}
+
+#validationMessage {
+    text-align: center;
+    color: rgba(200, 20, 20, .8);
+    text-decoration-style: solid;
+}
+
+
+

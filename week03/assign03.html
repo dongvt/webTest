@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css.css">
+        
+        <title>Govert Carre&ntilde;o's Home Page</title>
+    </head>
+    <body>
+        <header>
+            <div id="content"><a id="contentLink"></a>
+                <div id="welcome">
+                    <h1>Welcome to Govert Carre&ntilde;o's Home Page</h1>
+                    <p style="font-family: inherit">
+                        My name is Govert Carre&ntilde;o <br />
+                        <a href="https://www.facebook.com/DonGVTF">
+                            <img src="../image/me.png" alt="Myself Image" width="166" height="148" title="Click to go to Facebook!"> 
+                        </a>
+                        <br />
+                        My Major is <i>Software Engineering</i> <br />
+                        and I'm from <b>Bogot&aacute; - Colombia</b> 
+                        <a href="https://es.wikipedia.org/wiki/Colombia">
+                            <img src="../image/flagIcon.png" width="15" height="15" alt="Colombia" />
+                        </a>
+                    </p>
+                </div>
+                <a href="#formLink">Go to the form</a>
+                <div id="quote">
+                    <h4>My quote:</h4>
+                    <blockquote style="font-family: sans-serif">
+                        Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid. <br />
+                        - <i>Albert Einstein</i>
+                    </blockquote>
+                </div>
+                <div id="table">
+                    <h4>Courses:</h4>
+                    <table style="font-family: monospace; border-style: dashed">
+                        <tr>
+                            <th>Course #</th>
+                            <th>Description</th>
+                            <th>Sec #</th>
+                            <th>Time</th>
+                            <th>Location</th>
+                        </tr>
+                        <tr>
+                            <td>CS 213</td>
+                            <td>Web Engineering I</td>
+                            <td>05</td>
+                            <td>0:00 - 0:00 AM</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <td>CS 235</td>
+                            <td>Data Structures</td>
+                            <td>05</td>
+                            <td>0:00 - 0:00 AM</td>
+                            <td>Online</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="form"><a id="formLink"></a>
+                    <h3>Form:</h3>
+                    <form action="">
+                        <span class="label">Name: </span><br />
+                        <input type="text" name="Name" class="inputFields"> <br /> <br />
+                        <label class="formContainer">    
+                            <input type="radio" name="gender" value="male" > Male
+                            <span class="checkmarkRadio"></span>
+                        </label>
+                        <label class="formContainer">    
+                            <input type="radio" name="gender" value="female"> Female
+                            <span class="checkmarkRadio"></span>
+                        </label>
+                        <label class="formContainer">    
+                            <input type="radio" name="gender" value="other"> Other (What?)
+                            <span class="checkmarkRadio"></span>
+                        </label>
+                        <br />
+                        <span class="label">Country: </span><br />
+                        <select name="selection" class="inputFields">
+                            <option value="USA" class="checkmark">U.S.A</option>
+                            <option value="JAP">Japan</option>
+                            <option value="CAN">Canada</option>
+                            <option value="COL">Colombia</option>
+                            
+                        </select> <br /><br />
+                        
+                        <span class="label">What do you like? </span><br />
+                        <label class="formContainer">
+                            <input type="checkbox" name="tv" value="Bike"> Whatch TV
+                            <span class="checkmarkBox"></span>
+                        </label>
+                        <label class="formContainer">
+                            <input type="checkbox" name="sport" value="Car"> Pratice a Sport
+                            <span class="checkmarkBox"></span>
+                        </label>
+                        <label class="formContainer">    
+                            <input type="checkbox" name="book" value="Car"> Read Books
+                            <span class="checkmarkBox"></span>
+                        </label>
+                        <br /><br />
+                        
+                        <span class="label">Tell us something about you:</span> <br />
+                        <textarea name="TextArea" rows="6" class="inputFields">Write Here....</textarea> <br/>
+                        <input type="reset" name="Reset" value="Reset" class="buttons">
+                        <input type="submit" name="Submit" value="submit" class="buttons">
+                    </form>
+                    <a href="#contentLink">Go to welcome</a>
+                </div>
+                <hr>
+            </div>
+        </header>
+        <footer>
+            <a href="index.html">CS 213 Assignments</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="js.js"></script>
+        
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <header>
+            <div id="content">
+                <form action="assign11.php" method="post" name="mainForm" id="mainForm">
+                    <table>
+                        <tr>
+                            <td>First Name:</td> <td><input type="text" name="first_name" class="inputFields"></td> 
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td> <td><input type="text" name="last_name" class="inputFields"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td> <td><textarea name="address" class="inputFields"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td> <td><input type="text" name="phone" id="phone" class="inputFields"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" >
+                                <table style="width: 100%; text-align: center">
+                                    <tr>
+                                        <th>Check</th>
+                                        <th>Item</th>
+                                        <th>Price $</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="item_0" id="item_0"></td>
+                                        <td>Soap</td>
+                                        <td class="price">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="item_1" id="item_1"></td>
+                                        <td>Toothpaste</td>
+                                        <td class="price">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="item_2" id="item_2"></td>
+                                        <td>Shampoo</td>
+                                        <td class="price">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="item_3" id="item_3"></td>
+                                        <td>Mouthwash</td>
+                                        <td class="price">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Total</td>
+                                        <td><input type="text" name="total" readonly class="totalField"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Credit Card Type:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="radio" name="card_type" value="visa">Visa
+                                <input type="radio" name="card_type" value="mastercard">Mastercard
+                                <input type="radio" name="card_type" value="american express">American Express
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Credit Card #:</td> 
+                            <td><input type="text" name="credit_card" id="credit_card" class="inputFields"></td>
+                        </tr>
+                        <tr>
+                            <td>Credit Card Expiration Date:</td> 
+                            <td><input type="date" name="exp_date" id="exp_date" class="dateField"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center">
+                                <input type="reset" value="Reset" name="reset" class="buttons">
+                                <input type="submit" value="submit" name="submit" class="buttons">
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </form>
+                <div id="validationMessage"></div>
+            </div>
+                
+        </header>
+        <footer>
+            
+            <div class="footerLink">
+                <a href="../index.html">CS 213 Assignments</a>
+            </div>
+        </footer>
+    </body>
+</html>

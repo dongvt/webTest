@@ -1,0 +1,132 @@
+html,
+body
+{
+    background-color: azure;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Arial Narrow";
+}
+
+header {
+    height: 85%;
+    padding: 0px;
+}
+
+footer {
+    position: relative;
+    height: 15%;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 12px 0 15px -4px rgba(150, 150, 150, 0.8), -12px 0 8px -4px rgba(150, 150, 150, 0.8);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em;
+    margin: 0px;
+    background-color: rgb(68,84,106);
+    color: white;
+}
+
+h2 {
+    background-color: rgb(191,191,191);
+    text-align: center;
+    color: rgb(255,255,255);
+    padding: 1.1em;
+    margin: 0;
+}
+
+img{
+    border-radius: 50px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+    min-width: 20%;
+}
+
+li a{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    
+    border: solid 1px white; 
+}
+
+li a:hover{
+    background-color: black;
+}
+
+#myselfImage {
+    position: absolute;
+    top: 130px;
+    right: 30px;
+    max-width: 165px;
+}
+
+#content{
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+    height: 100%;
+    box-shadow: 12px 0 15px -4px rgba(150, 150, 150, 0.8), -12px 0 8px -4px rgba(150, 150, 150, 0.8);
+    background-color: rgb(255,255,255);
+}
+
+#slogan {
+    position: absolute;
+    left: 30px;
+    max-width: 500px;
+    min-height: 200px;
+    
+    font-size: 2em;
+    color: rgb(100,100,100);
+}
+
+#customers {
+    position: absolute;
+    max-width: 80%;
+    min-width: 80%;
+    left: 10%;
+    top: 65%;
+    
+    padding: 0px;
+    border: solid rgb(191,191,191);
+}
+
+
+
+#customers img 
+{
+    object-position: center;
+    width: 28%;
+    margin-left: 2%;
+    height: 10em;
+}
+
+.solcialMedia {
+    position: relative;
+    top: 3em;
+}
+
+.footerLink {
+    position: relative;
+    top: 4em;
+}
+
+
+
+
